@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+    background-color:  hsl(213, 19%, 18%);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+   
+    
+}
+.container .rating .star{
+    padding: 17px;
+    width: 50px;
+    border: 20px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+   margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+.container .first{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.container p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    padding-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.container .numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.container .numbers span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 15px;
+    margin-top: -5px;
+    padding: 15px 20px;
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.numbers span:hover{
+    background-color: hsl(217, 12%, 63%) ;
+}
+
+
+ .sub-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+   
+} 
+
+.thank-you img{
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+.you{
+    height: 30px;
+    width: 220px;
+    color: hsl(25, 97%, 53%);
+    border-radius: 15px;
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    margin-left: 120px;
+    margin-top: 20px;
+   
+}
+
+.you p{
+    padding: 1px;
+}
+
+.you #selected{
+    margin: 3px;
+}
+
+
+.container .ty{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.last p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.sub-btn{
+    width: 350px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    padding: 20px 20px;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: 'Pappila',sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container .sub-btn:hover{
+    background-color: #ffff;
+    color: hsl(25, 97%, 53%);
+}
+
+.checked {
+    background-color: hsl(25, 97%, 53%)!important;
+    color: #fff !important;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    
+    .container .rating .star {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container .first {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .container .numbers {
+        flex-direction: row;
+        
+    }
+
+    .container .numbers span {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 10px 15px;
+    }
+    .sub-btn{
+        width: 200px;
+    }
+}
